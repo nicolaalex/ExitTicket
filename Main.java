@@ -7,7 +7,7 @@ public class Main {
 
         System.out.println("Hello, World!");
         System.out.println("How old are you?");
-        int age = 0;
+        int age = -2;
         do {
             try {
                 age = scan.nextInt();
@@ -17,11 +17,9 @@ public class Main {
                 System.out.println(e.getMessage());
                 scan.next();
             }
-        }while ((age != -2));
+        }while ((age == -2));
 
         System.out.println("You are " + age + " years old");
     }
-
-
 
 }
